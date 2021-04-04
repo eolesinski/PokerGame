@@ -1,3 +1,5 @@
+## Project for COMS 1004 Fall 2019 at Columbia University
+
 Problem 1 - 47 points
 
 Video Poker: Do PROGRAMMING PROJECT Project P7.9 in the 6th Edition of Big Java
