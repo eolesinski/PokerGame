@@ -1,0 +1,56 @@
+// Ethan Olesinski eo2454
+
+Card Class
+
+The first class is the card class. It implements the compare to method and includes the basics for the compare
+card method. It includes a method for creatin a card objects as well as three additonal methods. These include
+a getRank(), getSuit(), and toString() method. These methods allow information from the card objects to be
+directly accessed as well as printed on the output display.
+
+Deck Class
+
+The deck class includes three methods. The first is to create an actual deck of cards. The second is to shuffle
+the deck randomly. The third is used to deal cards (starting at the top).
+
+Player Class
+
+The player class creates a player object. Each player contains instance variables such as hand, bankroll, and bet.
+The bankroll variable can be set to any value to indicate how much money a player starts out with. In this case,
+the value was arbitrarily chosen to be 100.
+
+Game Class
+
+This is the class that allows the player to actually play the game. It contains various methods to do this. At the
+bottom of the page is the list of all of the methods for determining whether a player has any of the wining hands
+that are part of a regular poker game. All are inlucded except "high card" as this would not make sence for a game
+with only one player. Each of these methods evaluate hands and expect as input a sorted array list of 5 card
+objects. There is s method above, checkHand() which takes in an array list of card objects. Once the input is
+included, the method sorts the hands and checks the various hand conditions. It also includes payouts for each
+type of winning hand. The Game tester method takes in a string of an arrays and parses them to fit the data types
+of the other methods. The play class plays the actual game and includes all of the methods together. In the game
+class, a getBet() method was created to prompt the user for a bet. This is then stored and used to calculate the
+payout if the player has a winning hand. There is a while loop which then prompts users to type if they would like
+to discard any of the cards in thier hand or not. Once they have discarded any cards that they would like thier
+hand is checked to see if it includes any winning hands and the payout (if any) is displayed.
+
+How to play the game:
+
+1. Run the game
+
+2. Place a bet (must be done before viewing your hand for obvious reasons)
+
+3. View hand
+
+4. Determine whether you would like to swap out any of the cards in your hand
+
+5. Check your hand to see if you have any winning hands
+
+6. Get a payout if you have a winning hand!
+
+Notes about design:
+
+I chose to desing my code with an individual method for each winning hand condition becuase, to me, this allowed
+me to keep track of which methods would then be able to be used to evaluate if there were winning hands or not.
+more easily. I also created a getRank() and getSuit() method to easily be able to access important card information
+which could later be used to evaluate if hands were winnin hands or not. The getBet() method was created to make
+the code in the play class more compact.
